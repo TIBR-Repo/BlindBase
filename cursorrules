@@ -1,0 +1,97 @@
+# BlindBase - Laravel E-Commerce Project
+
+## Project Overview
+BlindBase is an e-commerce website selling fire-rated, antimicrobial roller blinds to institutional buyers (schools, nurseries, care homes, clinics, commercial landlords).
+
+## Key Differentiator
+Compliance documentation - every product ships with BS 5867 fire certificates, antimicrobial specs, and material data sheets. This is what separates us from Amazon sellers.
+
+## Tech Stack
+- Laravel (latest)
+- SQLite database (simple, portable)
+- Blade templates
+- Tailwind CSS
+- Alpine.js for interactivity
+- Stripe for payments
+
+## Product Structure
+Roller blinds have:
+- 4 sizes: 60x120cm, 90x120cm, 120x120cm, 180x120cm
+- 4 colours: White, Light Grey, Stone, Charcoal
+- Compliance attributes: fire_rating, antimicrobial, wipe_clean, child_safe
+- Uploadable PDFs: fire certificate, spec sheet
+
+## Pricing
+- All prices stored and displayed ex VAT
+- VAT calculated at checkout (20%)
+- Trade accounts get 15% discount (configurable per account)
+- Free shipping over £75, otherwise £5.95
+
+## User Types
+1. Guest - can browse and checkout
+2. Trade Account - must apply and be approved, gets trade pricing
+3. Admin - manages everything
+
+## Database Models Needed
+- Product (with sizes, colours as JSON)
+- Category
+- Order
+- OrderItem
+- TradeAccount
+- Admin
+- ComplianceDocument
+
+## Routes Structure
+Public:
+- / (homepage)
+- /shop (product listing)
+- /shop/{category} (filtered listing)
+- /product/{slug} (product detail)
+- /cart
+- /checkout
+- /compliance (downloads page)
+- /contact
+- /trade/register
+- /trade/login
+
+Admin (/admin):
+- /admin (dashboard)
+- /admin/products
+- /admin/orders
+- /admin/trade-accounts
+- /admin/settings
+
+## Design Guidelines
+- Professional trade supplier feel, not consumer boutique
+- Colours: Primary #2563eb (blue), Secondary #0f172a (dark slate)
+- Clean sans-serif fonts (Inter for body, Work Sans for headings)
+- Minimal, functional UI
+- Mobile responsive
+- Prices always show "ex VAT"
+
+## Key Features to Implement
+1. Product listing with filters (category, size, colour, compliance)
+2. Cart stored in session (guests) or database (logged in)
+3. Guest checkout (no forced registration)
+4. Stripe Checkout integration
+5. Trade account application workflow
+6. Admin approval of trade accounts
+7. Downloadable compliance documents
+8. Order status management
+9. Low stock alerts
+
+## File Upload Paths
+- Product images: storage/app/public/products/
+- Compliance docs: storage/app/public/documents/
+
+## Admin Credentials (seed)
+- Email: admin@blindbase.co.uk
+- Password: BlindBase2024!
+
+## When generating code:
+- Use Laravel conventions and best practices
+- Create form requests for validation
+- Use policies for authorization
+- Keep controllers thin, use services for business logic
+- Write migrations with proper indexes
+- Use Blade components for reusable UI

@@ -1,59 +1,225 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# BlindBase - E-commerce Platform
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+BlindBase is a complete e-commerce platform for selling compliant blinds to schools, care homes, and commercial spaces. Built with Laravel 11 and Tailwind CSS.
 
-## About Laravel
+## Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Product Catalog**: Full product management with categories, variants (sizes/colours), and compliance badges
+- **Shopping Cart**: Session-based cart with quantity management
+- **Checkout**: Secure checkout with Stripe integration
+- **Trade Accounts**: Separate authentication for trade customers with discount pricing
+- **Admin Panel**: Complete back-office for managing products, orders, and trade accounts
+- **Compliance**: Fire-rated, antimicrobial, child-safe product certifications
+- **Responsive Design**: Mobile-first design with Tailwind CSS
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Tech Stack
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Backend**: Laravel 11
+- **Frontend**: Blade templates, Tailwind CSS, Alpine.js
+- **Database**: SQLite (development) / MySQL/PostgreSQL (production)
+- **Payments**: Stripe
+- **Email**: Laravel Mail
 
-## Learning Laravel
+## Quick Start
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+```bash
+# Clone the repository
+git clone https://github.com/your-org/blindbase.git
+cd blindbase
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+# Install dependencies
+composer install
+npm install
 
-## Laravel Sponsors
+# Copy environment file
+cp .env.example .env
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+# Generate application key
+php artisan key:generate
 
-### Premium Partners
+# Run migrations and seeders
+php artisan migrate --seed
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+# Create storage link
+php artisan storage:link
 
-## Contributing
+# Build assets
+npm run build
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+# Start development server
+php artisan serve
+```
 
-## Code of Conduct
+## Default Credentials
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Admin Panel
+- URL: `/admin`
+- Email: `admin@blindbase.co.uk`
+- Password: `BlindBase2024!`
 
-## Security Vulnerabilities
+## Environment Variables
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Key environment variables to configure:
+
+```env
+APP_NAME=BlindBase
+APP_URL=https://blindbase.co.uk
+
+# Database
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_DATABASE=blindbase
+DB_USERNAME=root
+DB_PASSWORD=
+
+# Mail
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.example.com
+MAIL_PORT=587
+MAIL_USERNAME=
+MAIL_PASSWORD=
+MAIL_FROM_ADDRESS=sales@blindbase.co.uk
+MAIL_FROM_NAME="BlindBase"
+
+# Stripe
+STRIPE_KEY=pk_live_...
+STRIPE_SECRET=sk_live_...
+STRIPE_WEBHOOK_SECRET=whsec_...
+```
+
+---
+
+## Production Deployment Checklist
+
+### Pre-Deployment
+
+- [ ] **Environment Configuration**
+  - [ ] Set `APP_ENV=production`
+  - [ ] Set `APP_DEBUG=false`
+  - [ ] Set `APP_URL` to your production domain
+  - [ ] Configure production database credentials
+  - [ ] Set up production mail server (SMTP/SES/Mailgun)
+  - [ ] Configure Stripe live keys (not test keys!)
+
+- [ ] **Security**
+  - [ ] Generate a new `APP_KEY` for production
+  - [ ] Ensure `.env` file is not in version control
+  - [ ] Set strong admin password (change default!)
+  - [ ] Enable HTTPS and set `SESSION_SECURE_COOKIE=true`
+  - [ ] Set `SANCTUM_STATEFUL_DOMAINS` if using API
+  - [ ] Review CORS settings in `config/cors.php`
+
+- [ ] **Database**
+  - [ ] Run migrations: `php artisan migrate --force`
+  - [ ] Seed initial data: `php artisan db:seed --class=AdminSeeder`
+  - [ ] Seed categories: `php artisan db:seed --class=CategorySeeder`
+  - [ ] Set up database backups (daily recommended)
+
+### Optimization
+
+- [ ] **Cache Configuration**
+  - [ ] `php artisan config:cache`
+  - [ ] `php artisan route:cache`
+  - [ ] `php artisan view:cache`
+  - [ ] `php artisan event:cache`
+
+- [ ] **Assets**
+  - [ ] Run `npm run build` for production assets
+  - [ ] Configure CDN if using one
+
+- [ ] **Storage**
+  - [ ] Run `php artisan storage:link`
+  - [ ] Set up proper file permissions (755 for directories, 644 for files)
+  - [ ] Configure S3/cloud storage for production (optional)
+
+### SEO & Marketing
+
+- [ ] **SEO**
+  - [ ] Generate sitemap: `php artisan sitemap:generate`
+  - [ ] Add sitemap to Google Search Console
+  - [ ] Verify robots.txt is correct
+  - [ ] Add Google Analytics/Tag Manager
+
+- [ ] **Social**
+  - [ ] Add Open Graph image (`public/images/og-image.jpg`)
+  - [ ] Configure social media links in footer
+  - [ ] Set up Facebook Pixel if using
+
+### Payments
+
+- [ ] **Stripe Configuration**
+  - [ ] Switch from test to live API keys
+  - [ ] Set up Stripe webhook endpoint: `POST /stripe/webhook`
+  - [ ] Configure webhook to receive `checkout.session.completed` events
+  - [ ] Test a real transaction with a small amount
+
+### Monitoring
+
+- [ ] **Logging & Errors**
+  - [ ] Configure logging to files or service (Papertrail, Loggly)
+  - [ ] Set up error tracking (Sentry, Bugsnag, etc.)
+  - [ ] Configure `LOG_LEVEL=error` for production
+
+- [ ] **Uptime Monitoring**
+  - [ ] Set up uptime monitoring (UptimeRobot, Pingdom)
+  - [ ] Configure health check endpoint
+  - [ ] Set up SSL certificate monitoring
+
+### Server Configuration
+
+- [ ] **Web Server**
+  - [ ] Configure Nginx/Apache for Laravel
+  - [ ] Set `public/` as document root
+  - [ ] Enable gzip compression
+  - [ ] Configure proper caching headers
+
+- [ ] **PHP**
+  - [ ] PHP 8.2+ installed
+  - [ ] Required extensions: BCMath, Ctype, JSON, Mbstring, OpenSSL, PDO, Tokenizer, XML
+  - [ ] Configure OPcache for production
+  - [ ] Set `memory_limit` appropriately (256M minimum)
+
+- [ ] **Queue Worker** (if using queues)
+  - [ ] Set up Supervisor for queue workers
+  - [ ] Configure queue driver (Redis recommended)
+  - [ ] `php artisan queue:work --queue=default,emails`
+
+- [ ] **Scheduler**
+  - [ ] Add cron job: `* * * * * cd /path-to-project && php artisan schedule:run >> /dev/null 2>&1`
+
+### Post-Deployment
+
+- [ ] **Testing**
+  - [ ] Test all user flows (browse, cart, checkout)
+  - [ ] Test trade account registration/login
+  - [ ] Test admin panel access and functions
+  - [ ] Test contact form submission
+  - [ ] Test email delivery
+
+- [ ] **Documentation**
+  - [ ] Document admin procedures
+  - [ ] Create backup/restore procedures
+  - [ ] Document deployment process
+
+---
+
+## Artisan Commands
+
+```bash
+# Generate sitemap
+php artisan sitemap:generate
+
+# Clear all caches
+php artisan optimize:clear
+
+# Cache for production
+php artisan optimize
+```
+
+## Support
+
+For support, email support@blindbase.co.uk.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Proprietary - All rights reserved.
