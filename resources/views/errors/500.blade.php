@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Server Error - BlindBase</title>
+    <title>Server Error - BlindPoint</title>
     @vite(['resources/css/app.css'])
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700,800" rel="stylesheet" />
@@ -14,7 +14,7 @@
             <!-- Logo -->
             <a href="{{ route('home') }}" class="inline-block mb-8">
                 <span class="text-3xl font-extrabold tracking-tight">
-                    <span class="text-secondary-900">BLIND</span><span class="text-primary-600">BASE</span>
+                    <span class="text-secondary-900">BLIND</span><span class="text-primary-600">POINT</span>
                 </span>
             </a>
 
@@ -52,7 +52,7 @@
 
             <!-- Help Link -->
             <p class="mt-8 text-sm text-slate-500">
-                If the problem persists, please <a href="mailto:support@blindbase.co.uk" class="text-primary-600 hover:underline">contact support</a>
+                If the problem persists, please <a href="mailto:support@blindpoint.co.uk" class="text-primary-600 hover:underline">contact support</a>
             </p>
         </div>
     </div>

@@ -78,7 +78,7 @@
 <body>
     <div class="header">
         <h1>New Contact Form Submission</h1>
-        <p>You have received a new enquiry from the BlindBase website.</p>
+        <p>You have received a new enquiry from the BlindPoint website.</p>
     </div>
     
     <div class="content">
@@ -130,7 +130,7 @@
     </div>
 
     <div class="footer">
-        <p>This email was sent from the contact form at blindbase.co.uk</p>
+        <p>This email was sent from the contact form at blindpoint.co.uk</p>
         <p>Submitted on {{ now()->format('d M Y \a\t H:i') }}</p>
     </div>
 </body>

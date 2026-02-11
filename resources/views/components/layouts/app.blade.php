@@ -6,26 +6,26 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- SEO Meta Tags -->
-    <title>{{ $title ?? 'BlindBase - Compliant Blinds for Schools, Care Homes & Commercial Spaces' }}</title>
+    <title>{{ $title ?? 'BlindPoint Supply - Compliant Blinds for Schools, Care Homes & Commercial Spaces' }}</title>
     <meta name="description" content="{{ $description ?? 'Fire-rated, antimicrobial, and child-safe blinds for schools, care homes, and commercial environments. Trade accounts available.' }}">
     <meta name="keywords" content="fire rated blinds, antimicrobial blinds, child safe blinds, school blinds, care home blinds, commercial blinds, roller blinds UK">
-    <meta name="author" content="BlindBase">
+    <meta name="author" content="BlindPoint Supply">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{{ url()->current() }}">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="{{ $title ?? 'BlindBase - Compliant Blinds for Schools, Care Homes & Commercial Spaces' }}">
+    <meta property="og:title" content="{{ $title ?? 'BlindPoint Supply - Compliant Blinds for Schools, Care Homes & Commercial Spaces' }}">
     <meta property="og:description" content="{{ $description ?? 'Fire-rated, antimicrobial, and child-safe blinds for schools, care homes, and commercial environments. Trade accounts available.' }}">
     <meta property="og:image" content="{{ asset('images/og-image.jpg') }}">
-    <meta property="og:site_name" content="BlindBase">
+    <meta property="og:site_name" content="BlindPoint Supply">
     <meta property="og:locale" content="en_GB">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{ url()->current() }}">
-    <meta name="twitter:title" content="{{ $title ?? 'BlindBase - Compliant Blinds' }}">
+    <meta name="twitter:title" content="{{ $title ?? 'BlindPoint Supply - Compliant Blinds' }}">
     <meta name="twitter:description" content="{{ $description ?? 'Fire-rated, antimicrobial, and child-safe blinds for schools, care homes, and commercial environments.' }}">
     <meta name="twitter:image" content="{{ asset('images/og-image.jpg') }}">
 
@@ -76,9 +76,8 @@
                 <!-- Logo -->
                 <a href="{{ route('home') }}" class="flex items-center flex-shrink-0">
                     <span class="text-2xl lg:text-3xl font-extrabold tracking-tight">
-                        <span class="text-secondary-900">BLIND</span><span class="text-primary-600">BASE</span>
+                        <span class="text-secondary-900">BLIND</span><span class="text-primary-600">POINT</span>
                     </span>
-                    <span class="block h-1 w-full bg-primary-600 -mt-1 hidden"></span>
                 </a>
 
                 <!-- Desktop Navigation -->
@@ -165,7 +164,7 @@
                 <div class="lg:col-span-2">
                     <a href="{{ route('home') }}" class="inline-block mb-4">
                         <span class="text-2xl font-extrabold tracking-tight">
-                            <span class="text-white">BLIND</span><span class="text-primary-400">BASE</span>
+                            <span class="text-white">BLIND</span><span class="text-primary-400">POINT</span>
                         </span>
                     </a>
                     <p class="text-slate-400 text-sm leading-relaxed mb-6 max-w-sm">
@@ -212,7 +211,7 @@
                             <svg class="w-5 h-5 mt-0.5 flex-shrink-0 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                             </svg>
-                            <span>sales@blindbase.co.uk</span>
+                            <span>sales@blindpoint.co.uk</span>
                         </li>
                     </ul>
                 </div>
@@ -221,7 +220,7 @@
             <!-- Bottom Bar -->
             <div class="mt-12 pt-8 border-t border-secondary-800 flex flex-col md:flex-row items-center justify-between gap-4">
                 <p class="text-slate-500 text-sm">
-                    © {{ date('Y') }} BlindBase. All rights reserved.
+                    © {{ date('Y') }} BlindPoint Supply. All rights reserved.
                 </p>
                 <div class="flex items-center gap-6">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/100px-Visa_Inc._logo.svg.png" alt="Visa" class="h-6 opacity-60">

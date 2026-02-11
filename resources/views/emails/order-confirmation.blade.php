@@ -30,7 +30,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="logo">BLIND<span>BASE</span></div>
+            <div class="logo">BLIND<span>POINT</span></div>
             <h1>Order Confirmation</h1>
         </div>
         
@@ -108,8 +108,8 @@
         </div>
         
         <div class="footer">
-            <p>&copy; {{ date('Y') }} BlindBase. All rights reserved.</p>
-            <p>sales@blindbase.co.uk</p>
+            <p>&copy; {{ date('Y') }} BlindPoint Supply. All rights reserved.</p>
+            <p>sales@blindpoint.co.uk</p>
         </div>
     </div>
 </body>

@@ -25,7 +25,7 @@ class ContactController extends Controller
         $validated = $request->validated();
 
         // Send email
-        Mail::to(config('mail.from.address', 'sales@blindbase.co.uk'))
+        Mail::to(config('mail.from.address', 'sales@blindpoint.co.uk'))
             ->send(new ContactFormMail($validated));
 
         return redirect()

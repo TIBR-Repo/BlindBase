@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100" fill="none">
+  <!-- BlindPoint Supply Logo - Horizontal stripes with arrow -->
+  
+  <!-- Blue stripe 1 (top) -->
+  <rect x="0" y="8" width="70" height="12" fill="#1a6eb0"/>
+  <polygon points="70,8 70,20 82,14" fill="#1a6eb0"/>
+  
+  <!-- Blue stripe 2 -->
+  <rect x="0" y="24" width="72" height="12" fill="#2175b5"/>
+  <polygon points="72,24 72,36 84,30" fill="#2175b5"/>
+  
+  <!-- Blue stripe 3 -->
+  <rect x="0" y="40" width="74" height="12" fill="#2a7db8"/>
+  <polygon points="74,40 74,52 86,46" fill="#2a7db8"/>
+  
+  <!-- Grey stripe 1 (dark) -->
+  <rect x="0" y="56" width="72" height="12" fill="#5a6573"/>
+  <polygon points="72,56 72,68 84,62" fill="#5a6573"/>
+  
+  <!-- Grey stripe 2 (light) -->
+  <rect x="0" y="72" width="70" height="12" fill="#7a8591"/>
+  <polygon points="70,72 70,84 82,78" fill="#7a8591"/>
+  
+  <!-- Arrow/chevron point (dark navy) -->
+  <polygon points="82,8 100,50 82,92 100,92 118,50 100,8" fill="#0f2540"/>
+</svg>

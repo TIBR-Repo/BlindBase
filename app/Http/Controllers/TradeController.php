@@ -69,7 +69,7 @@ class TradeController extends Controller
 
         // Send notification email to admin
         try {
-            Mail::to(config('mail.from.address', 'sales@blindbase.co.uk'))
+            Mail::to(config('mail.from.address', 'sales@blindpoint.co.uk'))
                 ->send(new TradeAccountPendingMail($account));
         } catch (\Exception $e) {
             // Log but don't fail registration

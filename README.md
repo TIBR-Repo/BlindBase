@@ -1,6 +1,6 @@
-# BlindBase - E-commerce Platform
+# BlindPoint Supply - E-commerce Platform
 
-BlindBase is a complete e-commerce platform for selling compliant blinds to schools, care homes, and commercial spaces. Built with Laravel 11 and Tailwind CSS.
+BlindPoint Supply is a complete e-commerce platform for selling compliant blinds to schools, care homes, and commercial spaces. Built with Laravel 11 and Tailwind CSS.
 
 ## Features
 
@@ -24,8 +24,8 @@ BlindBase is a complete e-commerce platform for selling compliant blinds to scho
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/blindbase.git
-cd blindbase
+git clone https://github.com/your-org/blindpoint.git
+cd blindpoint
 
 # Install dependencies
 composer install
@@ -54,21 +54,21 @@ php artisan serve
 
 ### Admin Panel
 - URL: `/admin`
-- Email: `admin@blindbase.co.uk`
-- Password: `BlindBase2024!`
+- Email: `admin@blindpoint.co.uk`
+- Password: `BlindPoint2024!`
 
 ## Environment Variables
 
 Key environment variables to configure:
 
 ```env
-APP_NAME=BlindBase
-APP_URL=https://blindbase.co.uk
+APP_NAME=BlindPoint
+APP_URL=https://blindpoint.co.uk
 
 # Database
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
-DB_DATABASE=blindbase
+DB_DATABASE=blindpoint
 DB_USERNAME=root
 DB_PASSWORD=
 
@@ -78,8 +78,8 @@ MAIL_HOST=smtp.example.com
 MAIL_PORT=587
 MAIL_USERNAME=
 MAIL_PASSWORD=
-MAIL_FROM_ADDRESS=sales@blindbase.co.uk
-MAIL_FROM_NAME="BlindBase"
+MAIL_FROM_ADDRESS=sales@blindpoint.co.uk
+MAIL_FROM_NAME="BlindPoint Supply"
 
 # Stripe
 STRIPE_KEY=pk_live_...
@@ -218,7 +218,7 @@ php artisan optimize
 
 ## Support
 
-For support, email support@blindbase.co.uk.
+For support, email support@blindpoint.co.uk.
 
 ## License
 

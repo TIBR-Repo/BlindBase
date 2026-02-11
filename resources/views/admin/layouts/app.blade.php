@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title', 'Admin') - BlindBase Admin</title>
+    <title>@yield('title', 'Admin') - BlindPoint Admin</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-slate-100 min-h-screen">
@@ -16,7 +16,7 @@
                 <div class="p-6 border-b border-white/10">
                     <a href="{{ route('admin.dashboard') }}" class="flex items-center gap-2">
                         <span class="text-xl font-bold">
-                            <span class="text-white">BLIND</span><span class="text-primary-400">BASE</span>
+                            <span class="text-white">BLIND</span><span class="text-primary-400">POINT</span>
                         </span>
                         <span class="text-xs bg-primary-600 px-2 py-0.5 rounded-full">Admin</span>
                     </a>

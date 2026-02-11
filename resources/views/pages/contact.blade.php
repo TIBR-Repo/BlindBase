@@ -138,7 +138,7 @@
                             </div>
                             <div>
                                 <h3 class="font-semibold text-secondary-900 mb-1">Email</h3>
-                                <a href="mailto:sales@blindbase.co.uk" class="text-primary-600 hover:text-primary-700 font-medium">sales@blindbase.co.uk</a>
+                                <a href="mailto:sales@blindpoint.co.uk" class="text-primary-600 hover:text-primary-700 font-medium">sales@blindpoint.co.uk</a>
                                 <p class="text-sm text-slate-500 mt-1">We reply within 24 hours</p>
                             </div>
                         </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Not Found - BlindBase</title>
+    <title>Page Not Found - BlindPoint</title>
     @vite(['resources/css/app.css'])
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700,800" rel="stylesheet" />
@@ -14,7 +14,7 @@
             <!-- Logo -->
             <a href="{{ route('home') }}" class="inline-block mb-8">
                 <span class="text-3xl font-extrabold tracking-tight">
-                    <span class="text-secondary-900">BLIND</span><span class="text-primary-600">BASE</span>
+                    <span class="text-secondary-900">BLIND</span><span class="text-primary-600">POINT</span>
                 </span>
             </a>
 

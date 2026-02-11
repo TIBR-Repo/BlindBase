@@ -14,8 +14,8 @@ class AdminSeeder extends Seeder
     {
         Admin::create([
             'name' => 'Admin',
-            'email' => 'admin@blindbase.co.uk',
-            'password' => 'BlindBase2024!',
+            'email' => 'admin@blindpoint.co.uk',
+            'password' => 'BlindPoint2024!',
         ]);
     }
 }

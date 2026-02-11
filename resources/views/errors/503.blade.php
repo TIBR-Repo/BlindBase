@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Maintenance Mode - BlindBase</title>
+    <title>Maintenance Mode - BlindPoint</title>
     @vite(['resources/css/app.css'])
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700,800" rel="stylesheet" />
@@ -14,7 +14,7 @@
             <!-- Logo -->
             <div class="mb-8">
                 <span class="text-3xl font-extrabold tracking-tight">
-                    <span class="text-white">BLIND</span><span class="text-primary-400">BASE</span>
+                    <span class="text-white">BLIND</span><span class="text-primary-400">POINT</span>
                 </span>
             </div>
 
@@ -38,11 +38,11 @@
             <div class="bg-white/5 rounded-xl p-6 mb-8">
                 <p class="text-slate-400 mb-4">Need urgent assistance?</p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-6 text-white">
-<a href="mailto:support@blindbase.co.uk" class="flex items-center gap-2 hover:text-primary-400 transition-colors">
+<a href="mailto:support@blindpoint.co.uk" class="flex items-center gap-2 hover:text-primary-400 transition-colors">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
-                        support@blindbase.co.uk
+                        support@blindpoint.co.uk
                     </a>
                 </div>
             </div>

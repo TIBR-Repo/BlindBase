@@ -28,7 +28,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="logo">BLIND<span>BASE</span></div>
+            <div class="logo">BLIND<span>POINT</span></div>
             <h1>🎉 Congratulations!</h1>
         </div>
         
@@ -39,7 +39,7 @@
             
             <p>Hi {{ $tradeAccount->contact_name }},</p>
             
-            <p>Great news! Your BlindBase Trade Account for <strong>{{ $tradeAccount->company_name }}</strong> has been approved. You now have access to exclusive trade pricing and benefits.</p>
+            <p>Great news! Your BlindPoint Trade Account for <strong>{{ $tradeAccount->company_name }}</strong> has been approved. You now have access to exclusive trade pricing and benefits.</p>
             
             <div class="discount-box">
                 <h3>Your Trade Discount</h3>
@@ -88,12 +88,12 @@
                 <a href="{{ route('trade.login') }}" class="button">Login to Your Account</a>
             </p>
             
-            <p style="margin-top: 30px;">Welcome to BlindBase Trade! If you have any questions, our dedicated trade team is here to help.</p>
+            <p style="margin-top: 30px;">Welcome to BlindPoint Trade! If you have any questions, our dedicated trade team is here to help.</p>
         </div>
         
         <div class="footer">
-            <p>&copy; {{ date('Y') }} BlindBase. All rights reserved.</p>
-            <p>trade@blindbase.co.uk</p>
+            <p>&copy; {{ date('Y') }} BlindPoint Supply. All rights reserved.</p>
+            <p>trade@blindpoint.co.uk</p>
         </div>
     </div>
 </body>

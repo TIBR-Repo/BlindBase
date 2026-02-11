@@ -26,7 +26,7 @@ class TradeAccountApprovedMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Your Trade Account Has Been Approved! - BlindBase',
+            subject: 'Your Trade Account Has Been Approved! - BlindPoint',
         );
     }
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Login - BlindBase</title>
+    <title>Admin Login - BlindPoint</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-secondary-900 min-h-screen flex items-center justify-center p-4">
@@ -11,7 +11,7 @@
         <!-- Logo -->
         <div class="text-center mb-8">
             <span class="text-3xl font-bold">
-                <span class="text-white">BLIND</span><span class="text-primary-400">BASE</span>
+                <span class="text-white">BLIND</span><span class="text-primary-400">POINT</span>
             </span>
             <p class="text-slate-400 mt-2">Admin Panel</p>
         </div>
@@ -28,7 +28,7 @@
                     <label for="email" class="block text-sm font-medium text-secondary-900 mb-2">Email Address</label>
                     <input type="email" name="email" id="email" value="{{ old('email') }}" required autofocus
                         class="w-full px-4 py-3 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 @error('email') border-red-500 @enderror"
-                        placeholder="admin@blindbase.co.uk">
+                        placeholder="admin@blindpoint.co.uk">
                     @error('email')
                         <p class="mt-2 text-sm text-red-500">{{ $message }}</p>
                     @enderror

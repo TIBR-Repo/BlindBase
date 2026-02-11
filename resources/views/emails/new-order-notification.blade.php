@@ -27,7 +27,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="logo">BLIND<span>BASE</span></div>
+            <div class="logo">BLIND<span>POINT</span></div>
             <h1>New Order Received</h1>
         </div>
         
@@ -108,7 +108,7 @@
         </div>
         
         <div class="footer">
-            <p>This is an automated notification from BlindBase Admin.</p>
+            <p>This is an automated notification from BlindPoint Admin.</p>
         </div>
     </div>
 </body>

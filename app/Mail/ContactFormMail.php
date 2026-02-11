@@ -36,7 +36,7 @@ class ContactFormMail extends Mailable
         $subjectLine = $subjects[$this->formData['subject']] ?? 'Contact Form Message';
 
         return new Envelope(
-            subject: "BlindBase: {$subjectLine} from {$this->formData['name']}",
+            subject: "BlindPoint: {$subjectLine} from {$this->formData['name']}",
             replyTo: [$this->formData['email']],
         );
     }

@@ -15,13 +15,13 @@
 
                 <div>
                     <label for="company_name" class="block text-sm font-medium text-secondary-900 mb-2">Company Name</label>
-                    <input type="text" name="company_name" id="company_name" value="{{ session('admin_settings.company_name', 'BlindBase Ltd') }}"
+                    <input type="text" name="company_name" id="company_name" value="{{ session('admin_settings.company_name', 'BlindPoint Supply Ltd') }}"
                         class="w-full px-4 py-2 border border-slate-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
                 </div>
 
                 <div>
                     <label for="company_email" class="block text-sm font-medium text-secondary-900 mb-2">Contact Email</label>
-                    <input type="email" name="company_email" id="company_email" value="{{ session('admin_settings.company_email', 'sales@blindbase.co.uk') }}"
+                    <input type="email" name="company_email" id="company_email" value="{{ session('admin_settings.company_email', 'sales@blindpoint.co.uk') }}"
                         class="w-full px-4 py-2 border border-slate-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
                 </div>
 

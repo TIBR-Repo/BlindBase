@@ -1,7 +1,7 @@
-# BlindBase - Laravel E-Commerce Project
+# BlindPoint Supply - Laravel E-Commerce Project
 
 ## Project Overview
-BlindBase is an e-commerce website selling fire-rated, antimicrobial roller blinds to institutional buyers (schools, nurseries, care homes, clinics, commercial landlords).
+BlindPoint Supply is an e-commerce website selling fire-rated, antimicrobial roller blinds to institutional buyers (schools, nurseries, care homes, clinics, commercial landlords).
 
 ## Key Differentiator
 Compliance documentation - every product ships with BS 5867 fire certificates, antimicrobial specs, and material data sheets. This is what separates us from Amazon sellers.
@@ -85,8 +85,8 @@ Admin (/admin):
 - Compliance docs: storage/app/public/documents/
 
 ## Admin Credentials (seed)
-- Email: admin@blindbase.co.uk
-- Password: BlindBase2024!
+- Email: admin@blindpoint.co.uk
+- Password: BlindPoint2024!
 
 ## When generating code:
 - Use Laravel conventions and best practices

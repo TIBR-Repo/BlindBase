@@ -26,7 +26,7 @@ class TradeAccountReceivedMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Trade Account Application Received - BlindBase',
+            subject: 'Trade Account Application Received - BlindPoint',
         );
     }
 

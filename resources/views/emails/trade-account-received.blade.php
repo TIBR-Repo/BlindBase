@@ -28,7 +28,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="logo">BLIND<span>BASE</span></div>
+            <div class="logo">BLIND<span>POINT</span></div>
             <h1>Application Received</h1>
         </div>
         
@@ -41,7 +41,7 @@
             
             <p>Hi {{ $tradeAccount->contact_name }},</p>
             
-            <p>Thank you for applying for a BlindBase Trade Account! We've received your application for <strong>{{ $tradeAccount->company_name }}</strong>.</p>
+            <p>Thank you for applying for a BlindPoint Trade Account! We've received your application for <strong>{{ $tradeAccount->company_name }}</strong>.</p>
             
             <div class="details-box">
                 <div class="detail-row">
@@ -88,11 +88,11 @@
                 </div>
             </div>
             
-            <p>If you have any questions in the meantime, please contact us at <a href="mailto:trade@blindbase.co.uk">trade@blindbase.co.uk</a>.</p>
+            <p>If you have any questions in the meantime, please contact us at <a href="mailto:trade@blindpoint.co.uk">trade@blindpoint.co.uk</a>.</p>
         </div>
         
         <div class="footer">
-            <p>&copy; {{ date('Y') }} BlindBase. All rights reserved.</p>
+            <p>&copy; {{ date('Y') }} BlindPoint Supply. All rights reserved.</p>
         </div>
     </div>
 </body>

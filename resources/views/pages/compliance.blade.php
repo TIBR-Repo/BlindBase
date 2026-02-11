@@ -25,7 +25,7 @@
             <div class="max-w-3xl">
                 <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6">Compliance & Certifications</h1>
                 <p class="text-lg text-slate-300 leading-relaxed">
-                    All BlindBase products meet the highest standards for safety and compliance in regulated environments. Download our certification documents and technical specifications below.
+                    All BlindPoint products meet the highest standards for safety and compliance in regulated environments. Download our certification documents and technical specifications below.
                 </p>
             </div>
         </div>

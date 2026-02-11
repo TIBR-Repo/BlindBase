@@ -17,7 +17,7 @@
             <div class="text-center max-w-3xl mx-auto mb-12">
                 <h1 class="text-4xl lg:text-5xl font-bold text-white mb-4">Apply for a Trade Account</h1>
                 <p class="text-lg text-slate-300">
-                    Join hundreds of contractors, installers and businesses who trust BlindBase for compliant blinds.
+                    Join hundreds of contractors, installers and businesses who trust BlindPoint for compliant blinds.
                 </p>
             </div>
 
@@ -265,7 +265,7 @@
                             <input type="checkbox" name="marketing" value="1"
                                 class="w-5 h-5 mt-0.5 text-primary-600 border-slate-300 rounded focus:ring-primary-500">
                             <span class="text-sm text-slate-600">
-                                I'd like to receive news, offers, and updates from BlindBase by email.
+                                I'd like to receive news, offers, and updates from BlindPoint by email.
                             </span>
                         </label>
                     </div>
